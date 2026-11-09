@@ -190,6 +190,59 @@ h1 .b{color:var(--blue)}h1 .o{color:var(--orange)}h1 .g{color:var(--green)}
 .hq:hover{background:var(--cbg)}
 .hc .pop{animation:fade .35s ease}
 
+/* --- jun：実験・観察の順番（タブ②の ❸） --- */
+.junwrap{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px}
+.junsets{display:flex;gap:8px;flex:none;flex-wrap:wrap}
+.junset{border:2px solid transparent;background:rgba(255,255,255,.6);border-radius:12px;padding:5px 14px;font-weight:800;color:var(--c);transition:background .2s,border-color .2s}
+.junset.on{background:#fff;border-color:var(--c)}
+.junmain{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1.15fr;gap:12px}
+.juntray{min-height:0;overflow:auto;display:flex;flex-direction:column;gap:8px;padding:10px;border-radius:18px;background:rgba(255,255,255,.4);border:2px dashed rgba(36,50,61,.2)}
+.juntray.q{border-style:solid;border-color:var(--c);background:var(--glass-strong)}
+.junc{border:2px solid transparent;background:#fff;border-radius:12px;padding:6px 12px;text-align:left;font-weight:700;font-size:1rem;line-height:1.6;box-shadow:0 2px 8px rgba(40,60,80,.12);transition:transform .15s,border-color .15s}
+.junc:hover{transform:translateY(-2px);border-color:#ffb74d}
+.junslots{list-style:none;margin:0;padding:0;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:6px}
+.junslot{flex:1 1 0;min-height:2.6em;display:flex;align-items:center;gap:10px;border:2px dashed var(--c);border-radius:12px;padding:4px 12px;background:rgba(255,255,255,.35);font-weight:700;line-height:1.55;transition:background .2s}
+.junslot.fill{border-style:solid;background:#fff;cursor:pointer}
+.junslot.ok{border-style:solid;border-color:var(--green);background:var(--green-bg)}
+.junslot.ng{border-style:solid;border-color:var(--red);background:#fde2e2;cursor:pointer}
+.junno{flex:none;width:1.8em;height:1.8em;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font-weight:800;line-height:1}
+.junt small{color:var(--ink-soft);font-size:.8em;margin-left:.3em}
+.junq{display:flex;flex-direction:column;gap:6px;animation:fade .35s ease}
+.junqt{font-weight:800;color:var(--c);line-height:1.6}
+.junopt{border:2px solid rgba(36,50,61,.15);background:#fff;border-radius:12px;padding:6px 12px;text-align:left;font-weight:700;font-size:.98rem;line-height:1.6;transition:transform .15s}
+.junopt:hover:not(:disabled){transform:translateY(-2px)}
+.junopt:disabled{cursor:default}
+.junopt.right{border-color:var(--green);background:var(--green-bg)}
+.junopt.wrong{border-color:var(--red);background:#fde2e2}
+.junopt.dim{opacity:.55}
+.junex{font-weight:800;line-height:1.6}
+.junex.ok{color:var(--green)}.junex.ng{color:var(--red)}
+
+/* --- hoka：ほかの説明文で（タブ②の ❹） --- */
+.hoka{flex:1;min-height:0;display:grid;grid-template-columns:1.8fr 1fr;gap:14px}
+.hotext{min-height:0;overflow:auto;background:#fff;border-radius:16px;padding:10px 16px;box-shadow:0 4px 14px rgba(40,60,80,.1)}
+.hotext h3{margin:0 0 6px;font-size:1.15rem}
+.hotext h3 small{font-size:.72rem;color:var(--ink-soft);margin-left:.6em;font-weight:700}
+.hop{margin:0 0 3px;line-height:1.7;font-size:.97rem;padding:1px 8px;border-radius:8px;border-left:4px solid transparent;transition:background .3s}
+.hon{font-weight:800;margin-right:.3em}
+.hotag{display:inline-block;font-size:.75rem;font-weight:800;color:#fff;border-radius:6px;padding:0 6px;margin-right:.4em;line-height:1.6;background:var(--hc)}
+.hop.t-q{--hc:var(--orange);background:var(--orange-bg);border-left-color:var(--orange)}
+.hop.t-a{--hc:var(--blue);background:var(--blue-bg);border-left-color:var(--blue)}
+.hop.t-m{--hc:var(--green);background:var(--green-bg);border-left-color:var(--green)}
+.hop.t-h{--hc:var(--ink-soft);background:rgba(36,50,61,.06);border-left-color:var(--ink-soft)}
+.hoside{min-height:0;overflow:auto;background:var(--glass-strong);border-radius:18px;padding:12px 16px;display:flex;flex-direction:column;gap:10px}
+.hoside .btn{align-self:flex-start}
+.hoq{font-weight:800;font-size:1.1rem;line-height:1.7}
+.honums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hon2{border:2px solid rgba(36,50,61,.15);background:#fff;border-radius:12px;font-weight:800;font-size:1.2rem;padding:6px 0;transition:border-color .15s,transform .15s}
+.hon2:hover{transform:translateY(-2px);border-color:#ffb74d}
+.hon2.on{border-color:#ffb74d;background:#fff6e5}
+.homsg{font-weight:800;line-height:1.6;min-height:1.6em;animation:fade .35s ease}
+.homsg.ok{color:var(--green)}.homsg.ng{color:var(--red)}
+.hotbl{display:flex;flex-direction:column;gap:6px}
+.hor{display:grid;grid-template-columns:4.2em 4.2em 1fr;gap:8px;background:#fff;border-radius:10px;padding:6px 10px;font-weight:700;align-items:center}
+.hor b{color:var(--orange)}
+
 /* --- toi：問いと答え --- */
 .tgrid{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);gap:10px}
 .tsen{border:3px solid transparent;background:#fff;border-radius:16px;padding:8px 14px;text-align:left;font-weight:700;font-size:clamp(.98rem,1.55vw,1.2rem);
@@ -328,6 +381,11 @@ h1 .b{color:var(--blue)}h1 .o{color:var(--orange)}h1 .g{color:var(--green)}
 .rnopt.right .rnmark{color:var(--green);border-color:var(--green)}
 .rnopt.wrong .rnmark{color:var(--red);border-color:var(--red)}
 .rnopt u{text-decoration:none;border-bottom:3px solid #d6337a;padding-bottom:1px}
+.rntsu{gap:8px}
+.rnpre{font-size:.92rem;font-weight:700;color:var(--ink-soft);line-height:1.7}
+.rnpre b{color:#16786c;margin-right:.4em}
+.rnsen{font-size:clamp(1.15rem,2.2vw,1.55rem);font-weight:700;line-height:1.9}
+.rntopts{--c:#1f9a8a}
 
 /* ===== 重要語句（ひな形1・つなぐ言葉と同じつくり：12まいずつ） ===== */
 .wdocs{flex:1;display:grid;grid-template-columns:1.6fr 1fr;gap:.55rem;min-height:0}
@@ -398,6 +456,9 @@ h1 .b{color:var(--blue)}h1 .o{color:var(--orange)}h1 .g{color:var(--green)}
   .hc{padding:8px 10px;min-height:3.2em}
   .rnmatch{grid-template-columns:1.45fr .45fr 1fr;flex:none;min-height:360px}
   .tgrid{grid-template-columns:1fr;flex:none}
+  .junmain,.hoka{grid-template-columns:1fr;flex:none}
+  .junslot{flex:none}
+  .rntopts{--on:2!important}
   .tline{font-size:1.15rem}
   .tq3{grid-template-columns:1fr;flex:none}
   .kmodel,.kform,.kout{grid-template-columns:1fr;flex:none}
@@ -558,9 +619,9 @@ const SORT = {
 
 /* タブ②の ❶分けよう ❷表で整理 の切りかえ */
 let hcnMode='sort';
-const hcnSeg=()=>`<div class="seg hcnseg"><button data-m="sort" class="${hcnMode==='sort'?'on':''}">❶ 分けよう</button><button data-m="hyou" class="${hcnMode==='hyou'?'on':''}">❷ 表で整理</button></div>`;
+const hcnSeg=()=>`<div class="seg hcnseg"><button data-m="sort" class="${hcnMode==='sort'?'on':''}">❶ 分けよう</button><button data-m="hyou" class="${hcnMode==='hyou'?'on':''}">❷ 表で整理</button><button data-m="jun" class="${hcnMode==='jun'?'on':''}">❸ 実験の順番</button><button data-m="hoka" class="${hcnMode==='hoka'?'on':''}">❹ ほかの文章で</button></div>`;
 function hcnBind(){ panel.querySelectorAll('.hcnseg button').forEach(b=>b.onclick=()=>{ hcnMode=b.dataset.m; VIEWS.hcn(); }); }
-VIEWS.hcn = function(){ hcnMode==='sort'?VIEWS.sort():VIEWS.hyou(); };
+VIEWS.hcn = function(){ ({sort:VIEWS.sort, hyou:VIEWS.hyou, jun:VIEWS.jun, hoka:VIEWS.hoka})[hcnMode](); };
 
 let sPlace=null, sSel=null, sChecked=false, sMsg='', sMsgOk=false;
 VIEWS.sort = function(){
@@ -660,6 +721,177 @@ VIEWS.hyou = function(){
   });
   $('#hAll').onclick=()=>{ hOpen=R.map(()=>[true,true]); hLast=''; VIEWS.hyou(); };
   $('#hReset').onclick=()=>{ hOpen=R.map(()=>[false,false]); VIEWS.hyou(); };
+  hcnBind();
+};
+
+/* ---- jun：実験・観察の順番（タブ②の ❸） ----
+   items はならべる正しい順。p はだん落番号（こたえあわせのあとに出る）。q は正しくならべたあとの問題（a が正解の番号） */
+const JUN = {
+  lead:'カードをおして、正しい順番にならべよう。',
+  sets:[
+    {name:'中1 [実験:じっけん]（だん落③〜⑥）', c:'c-orange', items:[
+      {p:'③', t:'このことを[調:しら]べるために、[実験:じっけん]をした。'},
+      {p:'④', t:'まず、イソギンチャクをつけていないヤドカリを、おなかをすかせたタコの[水:みず]そうに[放:はな]す。'},
+      {p:'④', t:'タコは、すぐヤドカリをつかまえ、[貝:かい]がらをかみくだいて[食:た]べてしまう。'},
+      {p:'⑤', t:'[次:つぎ]に、イソギンチャクをつけているヤドカリを[入:い]れてみる。'},
+      {p:'⑤', t:'タコは、イソギンチャクにふれそうになると、あわててあしを[引:ひ]っこめる。'},
+      {p:'⑥', t:'[実:じつ]は、イソギンチャクのしょく[手:しゅ]には、ふれるとはりが[飛:と]び[出:だ]す[仕組:しく]みがある。'},
+      {p:'⑥', t:'それで、ヤドカリは、てきから[身:み]を[守:まも]ることができる。'}],
+     q:{t:'[筆者:ひっしゃ]は、なぜ[実験:じっけん]のことをくわしく書いたのでしょう。',
+        o:['[答:こた]え（イソギンチャクがてきから[守:まも]ってくれること）が本当だと、読む人がなっとくできるようにするため。',
+           'タコがヤドカリを[食:た]べるところを、しょうかいするため。',
+           '[問:と]いの[数:かず]を、ふやすため。'], a:0,
+        e:'イソギンチャクがあるときとないときを[比:くら]べたから、答えにせっとく[力:りょく]が生まれるね。'}},
+    {name:'中2 [観察:かんさつ]（だん落⑧・⑨）', c:'c-blue', items:[
+      {p:'⑧', t:'ロス[博士:はかせ]が、ヤドカリとイソギンチャクを[水:みず]そうで[観察:かんさつ]した。'},
+      {p:'⑨', t:'ヤドカリの[水:みず]そうに、[石:いし]などについたイソギンチャクを[入:い]れる。'},
+      {p:'⑨', t:'ヤドカリは、すぐ[近:ちか]づいてきて、あしでつついたり、はさみで[引:ひ]っぱったりして、イソギンチャクをはがす。'},
+      {p:'⑨', t:'そして、かかえるようにして、[自分:じぶん]の[貝:かい]がらの上におしつける。'},
+      {p:'⑨', t:'イソギンチャクは、しょく[手:しゅ]をのばしたままで、はりも[飛:と]び[出:だ]さない。'}],
+     q:{t:'ロス[博士:はかせ]の[観察:かんさつ]で、分かったことはどれでしょう。',
+        o:['イソギンチャクが、[自分:じぶん]でヤドカリの[貝:かい]がらに上ってくる。',
+           'ヤドカリは、イソギンチャクをはがして[貝:かい]がらにおしつける。そのとき、はりは[飛:と]び[出:だ]さない。',
+           'ヤドカリは、イソギンチャクのはりにさされて、いたがる。'], a:1,
+        e:'だん落⑦の二つの[問:と]い（どうやってうつすのか・はりでさされないのか）の[答:こた]えになっているね。'}}
+  ],
+  msg:{notyet:'まだならべていないカードがあるよ。',
+       perfect:'ぜんぶせいかい！ 「まず」「次に」「実は」「それで」「そして」が、順番の手がかりになるね。',
+       ng:' こ せいかい。赤いカードをおして、ならべなおそう。'}
+};
+let jSi=0, jS=null;
+function junStart(){
+  jS=JUN.sets.map(s=>{
+    let o; do{ o=shuffle(s.items.map((_,i)=>i)); }while(o.every((x,k)=>x===k));
+    return {order:o, slots:s.items.map(()=>null), checked:false, msg:'', ok:false, qp:null};
+  });
+}
+function junQ(set,st){
+  const q=set.q, a=st.qp!==null, good=st.qp===q.a;
+  return `<div class="junq"><div class="junqt">${rnR(q.t)}</div>${q.o.map((o,k)=>`<button class="junopt${a?(k===q.a&&good?' right':(k===st.qp?' wrong':(good?' dim':''))):''}" data-k="${k}" ${good?'disabled':''}>${rnR(o)}</button>`).join('')}${a?`<div class="junex ${good?'ok':'ng'}">${good?'◯ '+rnR(q.e):'✕ もう一度考えてみよう。'}</div>`:''}</div>`;
+}
+VIEWS.jun = function(){
+  if(!jS) junStart();
+  const set=JUN.sets[jSi], st=jS[jSi], I=set.items;
+  const used=st.slots.filter(x=>x!==null);
+  const tray=st.order.filter(i=>!used.includes(i));
+  const allOk=st.checked&&st.slots.every((x,k)=>x===k);
+  panel.innerHTML=`
+    <div class="bar">
+      <div class="lead">${JUN.lead}</div>
+      ${hcnSeg()}
+      <button class="btn main" id="jCheck">こたえあわせ</button>
+      <button class="btn" id="jReset">もう一度</button>
+    </div>
+    <div class="junwrap">
+      <div class="junsets">${JUN.sets.map((s,k)=>`<button class="junset ${s.c}${k===jSi?' on':''}" data-k="${k}">${rnR(s.name)}${jS[k].ok?' ✓':''}</button>`).join('')}</div>
+      <div class="junmain ${set.c}">
+        <div class="juntray${allOk?' q':''}">${allOk?junQ(set,st):tray.length?tray.map(i=>`<button class="junc" data-i="${i}">${rnR(I[i].t)}</button>`).join(''):'<span class="trayempty">ぜんぶならべたね。「こたえあわせ」をおそう。</span>'}</div>
+        <ol class="junslots">${st.slots.map((x,k)=>{
+          const cls=x===null?'':(st.checked?(x===k?' ok':' ng'):' fill');
+          return `<li class="junslot${cls}" data-k="${k}"><span class="junno">${k+1}</span>${x===null?'':`<span class="junt">${rnR(I[x].t)}${st.checked&&x===k?`<small>（だん落${I[x].p}）</small>`:''}</span>`}</li>`;}).join('')}</ol>
+      </div>
+      <div class="smsg ${st.msg?'show':''} ${st.ok?'ok':'ng'}">${st.msg||'　'}</div>
+    </div>`;
+  panel.querySelectorAll('.junset').forEach(b=>b.onclick=()=>{ jSi=+b.dataset.k; VIEWS.jun(); });
+  panel.querySelectorAll('.junc').forEach(b=>b.onclick=()=>{
+    const k=st.slots.indexOf(null); if(k<0) return;
+    st.slots[k]=+b.dataset.i; st.checked=false; st.msg=''; VIEWS.jun();
+  });
+  panel.querySelectorAll('.junslot.fill,.junslot.ng').forEach(li=>li.onclick=()=>{
+    st.slots[+li.dataset.k]=null; st.checked=false; st.msg=''; VIEWS.jun();
+  });
+  panel.querySelectorAll('.junopt').forEach(b=>b.onclick=()=>{
+    st.qp=+b.dataset.k; st.qp===set.q.a?pinpon():bubu(); VIEWS.jun();
+  });
+  $('#jCheck').onclick=()=>{
+    if(allOk) return;
+    if(st.slots.some(x=>x===null)){ st.checked=false; st.msg=JUN.msg.notyet; st.ok=false; bubu(); return VIEWS.jun(); }
+    st.checked=true;
+    const n=st.slots.filter((x,k)=>x===k).length;
+    if(n===I.length){ st.ok=true; st.msg=JUN.msg.perfect; pinpon(); setTimeout(party,150); }
+    else { st.ok=false; st.msg=n+' / '+I.length+JUN.msg.ng; bubu(); }
+    VIEWS.jun();
+  };
+  $('#jReset').onclick=()=>{ junStart(); VIEWS.jun(); };
+  hcnBind();
+};
+
+/* ---- hoka：ほかの説明文で組み立てをとらえる（タブ②の ❹） ----
+   paras は Claude が書いた説明文。steps の a は正しいだん落（0から）。tag は正解したあと本文につく見出し */
+const HOKA = {
+  lead:'文章を読んで、右の問題に答えよう。',
+  title:'クマノミとイソギンチャク',
+  note:'（このアプリのために作った文章）',
+  paras:[
+    '[海:うみ]の[中:なか]には、イソギンチャクのしょく[手:しゅ]の[間:あいだ]でくらしている[魚:さかな]がいます。オレンジ[色:いろ]の[体:からだ]に[白:しろ]いしまのある、クマノミです。',
+    'なぜ、クマノミは、イソギンチャクのしょく[手:しゅ]の[間:あいだ]でくらしているのでしょうか。',
+    'イソギンチャクのしょく[手:しゅ]には、ふれた[相手:あいて]をさすはりがあります。そのため、クマノミをねらう[大:おお]きな[魚:さかな]も、イソギンチャクには[近:ちか]づきません。それで、クマノミは、しょく[手:しゅ]の[間:あいだ]にかくれることで、てきから[身:み]を[守:まも]ることができるのです。',
+    'では、クマノミは、どうしてイソギンチャクのはりにさされないのでしょうか。',
+    '[実:じつ]は、クマノミの[体:からだ]は、ねばねばしたまくでおおわれています。このまくのおかげで、しょく[手:しゅ]にふれても、はりが[飛:と]び[出:だ]さないのです。',
+    'では、イソギンチャクは、クマノミといっしょにいることで、[何:なに]か[利益:りえき]があるのでしょうか。',
+    'イソギンチャクのしょく[手:しゅ]を[食:た]べようとする[魚:さかな]がやってくると、クマノミは、その[魚:さかな]を[追:お]いはらいます。ですから、イソギンチャクは、クマノミに[守:まも]ってもらうことができるのです。',
+    'このように、クマノミとイソギンチャクは、たがいに[助:たす]け[合:あ]って[生:い]きているのです。'
+  ],
+  steps:[
+    {t:'[問:と]いの文があるだん落を、ぜんぶえらぼう。', multi:true, a:[1,3,5], tc:'q', tag:{1:'問い①',3:'問い②',5:'問い③'},
+     h:'文のおわりが「〜でしょうか。」になっている文をさがそう。問いは3つあるよ。'},
+    {t:'[問:と]い①（だん落②）の[答:こた]えが書いてあるのは、どのだん落？', a:[2], tc:'a', tag:{2:'答え①'},
+     h:'問い①のすぐあとを読もう。「それで、」に注目。'},
+    {t:'[問:と]い②（だん落④）の[答:こた]えが書いてあるのは、どのだん落？', a:[4], tc:'a', tag:{4:'答え②'},
+     h:'「[実:じつ]は、」で始まるだん落をさがそう。'},
+    {t:'[問:と]い③（だん落⑥）の[答:こた]えが書いてあるのは、どのだん落？', a:[6], tc:'a', tag:{6:'答え③'},
+     h:'「ですから、」があるだん落をさがそう。'},
+    {t:'文章全体をまとめている「[終:お]わり」のだん落は？', a:[7], tc:'m', tag:{7:'まとめ'},
+     h:'「このように、」は、まとめるときに使う言葉だよ。'}
+  ],
+  rows:[['始め','①','はじめの説明'],['中1','②・③','問い① → 答え'],['中2','④・⑤','問い② → 答え'],['中3','⑥・⑦','問い③ → 答え'],['終わり','⑧','まとめ']],
+  msg:{ok:'せいかい！', ng:'ちがうよ。', self:'そこは、問いの文があるだん落だよ。',
+       extra:'問いではないだん落も、えらんでいるよ。', miss:'まだ見つけていない問いがあるよ。', none:'だん落をえらんでから、こたえあわせをしよう。',
+       done:'ぜんぶせいかい！ 「ヤドカリとイソギンチャク」と同じ組み立てだね。'}
+};
+let ho=null;
+function hokaStart(){ ho={si:0, pick:[], msg:'', ok:false}; }
+VIEWS.hoka = function(){
+  if(!ho) hokaStart();
+  const N='①②③④⑤⑥⑦⑧', S=HOKA.steps, M=HOKA.msg, done=ho.si>=S.length, st=S[ho.si];
+  const tags={};
+  S.slice(0,ho.si).forEach(s=>Object.keys(s.tag).forEach(k=>tags[k]={t:s.tag[k],c:s.tc}));
+  if(done) tags[0]={t:'はじめ',c:'h'};
+  panel.innerHTML=`
+    <div class="bar">
+      <div class="lead">${HOKA.lead}</div>
+      ${hcnSeg()}
+      <button class="btn" id="hoReset">もう一度</button>
+    </div>
+    <div class="hoka">
+      <div class="hotext">
+        <h3>${HOKA.title}<small>${HOKA.note}</small></h3>
+        ${HOKA.paras.map((p,i)=>`<p class="hop${tags[i]?' t-'+tags[i].c:''}"><span class="hon">${N[i]}</span>${tags[i]?`<span class="hotag">${tags[i].t}</span>`:''}${rnR(p)}</p>`).join('')}
+      </div>
+      <div class="hoside">
+        ${rnDots(S.length,ho.si,ho.si,()=>true)}
+        ${done?`<div class="homsg ok">${M.done}</div>
+          <div class="hotbl">${HOKA.rows.map(r=>`<div class="hor"><b>${r[0]}</b><span>${r[1]}</span><span>${r[2]}</span></div>`).join('')}</div>`
+        :`<div class="hoq">${rnR(st.t)}</div>
+          <div class="honums">${[...N].map((n,i)=>`<button class="hon2${ho.pick.includes(i)?' on':''}" data-i="${i}">${n}</button>`).join('')}</div>
+          ${st.multi?'<button class="btn main" id="hoCheck">こたえあわせ</button>':''}
+          <div class="homsg ${ho.ok?'ok':'ng'}">${ho.msg}</div>`}
+      </div>
+    </div>`;
+  const next=()=>{ ho.si++; ho.pick=[]; ho.msg=M.ok; ho.ok=true; pinpon(); if(ho.si>=S.length) setTimeout(party,150); VIEWS.hoka(); };
+  panel.querySelectorAll('.hon2').forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.i;
+    if(st.multi){ ho.pick=ho.pick.includes(i)?ho.pick.filter(x=>x!==i):ho.pick.concat(i); ho.msg=''; return VIEWS.hoka(); }
+    if(st.a.includes(i)) return next();
+    ho.ok=false; ho.msg=(S[0].a.includes(i)?M.self:M.ng)+'<br>ヒント：'+rnR(st.h); bubu(); VIEWS.hoka();
+  });
+  if($('#hoCheck')) $('#hoCheck').onclick=()=>{
+    const extra=ho.pick.some(i=>!st.a.includes(i)), miss=st.a.some(i=>!ho.pick.includes(i));
+    if(!ho.pick.length){ ho.ok=false; ho.msg=M.none; bubu(); return VIEWS.hoka(); }
+    if(!extra&&!miss) return next();
+    ho.ok=false; ho.msg=(extra?M.extra:M.miss)+'<br>ヒント：'+rnR(st.h); bubu(); VIEWS.hoka();
+  };
+  $('#hoReset').onclick=()=>{ hokaStart(); VIEWS.hoka(); };
   hcnBind();
 };
 
@@ -966,7 +1198,8 @@ function kakuC(){
    qs  ：――の言葉の使い方が正しいほうをえらぶ。<u>…</u> が――。a は正しいほうの番号（0から） */
 const RENSHU = {
   lead:{a:'左の文をおしてから、つづく言葉をおして、せんでつなごう。',
-        b:'――の言葉の使い方が正しいほうをえらぼう。'},
+        b:'――の言葉の使い方が正しいほうをえらぼう。',
+        c:'本文の（　）に入るつなぎ言葉をえらぼう。'},
   sets:[
     [ {s:'かべにはったポスターを、[破:やぶ]らないようにそっと', w:'はがす'},
       {s:'ねぼうして、[学校:がっこう]にちこくしそうになり', w:'あわてる'},
@@ -997,6 +1230,35 @@ const RENSHU = {
     {w:'気持ちよさそう', o:['ねこが、[日:ひ]なたで<u>[気持:きも]ちよさそうに</u>ねている。','ころんで、ひざが<u>[気持:きも]ちよさそうに</u>いたい。'], a:0,
      e:'「[気持:きも]ちよさそう」は、気持ちがよいように[見:み]えるようす。いたいときには使わない。'}
   ],
+  tsu:[
+    {p:'④', pre:'このことを[調:しら]べるために、[次:つぎ]のような[実験:じっけん]をしました。',
+     s:'（　）、おなかをすかせたタコのいる[水:みず]そうに、イソギンチャクをつけていないヤドカリを[放:はな]します。',
+     o:['まず','しかし','それで','また'], a:0, e:'「まず」は、はじめにすることを[表:あらわ]す。[実験:じっけん]のじゅんじょを[説明:せつめい]するときに使う。'},
+    {p:'⑤', pre:'……タコはヤドカリをつかまえ、[貝:かい]がらをかみくだいて[食:た]べてしまいます。',
+     s:'（　）、イソギンチャクをつけているヤドカリを[入:い]れてみます。',
+     o:['[次:つぎ]に','まず','ですから','では'], a:0, e:'「[次:つぎ]に」は、「まず」のあとに[続:つづ]くことを[表:あらわ]す。「まず」「次に」で、じゅんじょが分かる。'},
+    {p:'⑥', pre:'ヤドカリが[近:ちか]づくと、タコは[後:あと]ずさりしたり、[水:みず]そうの[中:なか]をにげ[回:まわ]ったりします。',
+     s:'（　）、イソギンチャクのしょく[手:しゅ]は、[何:なに]かがふれるとはりが[飛:と]び[出:だ]す[仕組:しく]みになっています。',
+     o:['[実:じつ]は','[次:つぎ]に','しかし','また'], a:0, e:'「[実:じつ]は」は、それまでに書いたことの本当のわけ（ひみつ）を、説明しはじめるときに使う。答えのだん落の目じるしになる。'},
+    {p:'⑥', pre:'タコや[魚:さかな]はこのことをよく[知:し]っていて、イソギンチャクに[近:ちか]づこうとはしません。',
+     s:'（　）、ヤドカリは、イソギンチャクを[自分:じぶん]の[貝:かい]がらにつけることで、てきから[身:み]を[守:まも]ることができるのです。',
+     o:['それで','しかし','まず','では'], a:0, e:'「それで」は、前のことがわけになって、あとのことが[起:お]こるときに使う。'},
+    {p:'⑦', pre:'……ヤドカリは、イソギンチャクを[自分:じぶん]の[貝:かい]がらにつけることで、てきから[身:み]を[守:まも]ることができるのです。',
+     s:'（　）、ヤドカリは、[石:いし]についたイソギンチャクを、どうやって[自分:じぶん]の[貝:かい]がらにうつすのでしょうか。',
+     o:['では','それで','また','[次:つぎ]に'], a:0, e:'「では」は、話をかえて、新しい[問:と]いを出すときに使う。だん落⑩の問いも「では、」で始まっているよ。'},
+    {p:'⑨', pre:'……[両方:りょうほう]のはさみで[引:ひ]っぱったりして、イソギンチャクをはがしてしまいます。',
+     s:'（　）、かかえるようにして[自分:じぶん]の[貝:かい]がらの上におしつけるのです。',
+     o:['そして','しかし','では','[実:じつ]は'], a:0, e:'「そして」は、前のことに[続:つづ]いて[起:お]こることをつなぐ。'},
+    {p:'⑪', pre:'ヤドカリについていないベニヒモイソギンチャクは、ほとんど[動:うご]きません。',
+     s:'（　）、えさになる[魚:さかな]やエビが[近:ちか]くにやってくるのを[待:ま]つしかありません。',
+     o:['ですから','しかし','まず','では'], a:0, e:'「ですから」は「それで」と同じなかま。前のことがわけになって、あとのことが[起:お]こる。'},
+    {p:'⑪', pre:'……えさになる[魚:さかな]やエビが[近:ちか]くにやってくるのを[待:ま]つしかありません。',
+     s:'（　）、ヤドカリについていれば、いろいろな[場所:ばしょ]に[移動:いどう]することができるので、その[結果:けっか]、えさをとる[機会:きかい]がふえます。',
+     o:['しかし','ですから','まず','[次:つぎ]に'], a:0, e:'「しかし」は、前とはんたいのことを言うときに使う。「[動:うご]かない」→「[移動:いどう]できる」と、ようすがかわっているね。'},
+    {p:'⑪', pre:'……その[結果:けっか]、えさをとる[機会:きかい]がふえます。',
+     s:'（　）、ヤドカリの[食:た]べのこしをもらうこともできるのです。',
+     o:['また','しかし','では','まず'], a:0, e:'「また」は、前のことに、もう一つつけくわえるときに使う。イソギンチャクの[利益:りえき]が二つ書いてあるね。'}
+  ],
   msg:{perfect:'ぜんもんせいかい！ 言葉の使い方がよく分かっているね。',
        good:'あと少し！ 重要語句のタブで、意味をたしかめよう。',
        low:'重要語句のタブで意味をたしかめてから、もう一度ちょうせんしよう。'}
@@ -1004,24 +1266,26 @@ const RENSHU = {
 
 const rnR=s=>String(s).replace(/\[([^:\]]+):([^\]]+)\]/g,'<ruby>$1<rt>$2</rt></ruby>');
 const RN_PC=['var(--blue)','var(--orange)','var(--green)','var(--gl)'];
-let rnMode='a', rA=null, rB=null;
+let rnMode='a', rA=null, rB=null, rC=null;
 function rnStartA(){ rA={si:0, order:RENSHU.sets.map(s=>shuffle(s.map((_,i)=>i))), pairs:{}, sel:null, checked:false, res:[], done:false, msg:''}; }
 function rnStartB(){ rB={qi:0, res:[], pick:null}; }
+function rnStartC(){ rC={qi:0, res:[], pick:null, order:RENSHU.tsu.map(q=>shuffle(q.o.map((_,k)=>k)))}; }
 VIEWS.renshu = function(){
-  if(!rA) rnStartA(); if(!rB) rnStartB();
+  if(!rA) rnStartA(); if(!rB) rnStartB(); if(!rC) rnStartC();
   panel.innerHTML=`
     <div class="bar">
       <div class="lead">${RENSHU.lead[rnMode]}</div>
       <div class="seg rnseg">
         <button data-m="a" class="${rnMode==='a'?'on':''}">❶ せんでつなごう</button>
         <button data-m="b" class="${rnMode==='b'?'on':''}">❷ 正しいのはどっち？</button>
+        <button data-m="c" class="${rnMode==='c'?'on':''}">❸ つなぎ言葉</button>
       </div>
       <button class="btn" id="rnReset">もう一度</button>
     </div>
     <div class="rnbody" id="rnBody"></div>`;
   panel.querySelectorAll('.rnseg button').forEach(b=>b.onclick=()=>{ rnMode=b.dataset.m; VIEWS.renshu(); });
-  $('#rnReset').onclick=()=>{ rnMode==='a'?rnStartA():rnStartB(); VIEWS.renshu(); };
-  rnMode==='a'?rnDrawA():rnDrawB();
+  $('#rnReset').onclick=()=>{ ({a:rnStartA,b:rnStartB,c:rnStartC})[rnMode](); VIEWS.renshu(); };
+  ({a:rnDrawA,b:rnDrawB,c:rnDrawC})[rnMode]();
 };
 function rnDots(n,done,cur,okFn){
   return `<div class="dots">${Array.from({length:n},(_,k)=>`<i class="${k<done?(okFn(k)?'ok':'ng'):(k===cur?'now':'')}"></i>`).join('')}</div>`;
@@ -1116,6 +1380,35 @@ function rnDrawB(){
     rB.qi++; rB.pick=null;
     if(rB.qi>=Q.length&&rB.res.every(Boolean)){ pinpon(); setTimeout(party,150); }
     rnDrawB();
+  };
+}
+/* ❸ つなぎ言葉（本文の（　）に入る言葉をえらぶ） */
+function rnDrawC(){
+  const Q=RENSHU.tsu;
+  if(rC.qi>=Q.length) return rnResult(rC.res.filter(Boolean).length, Q.length, rnStartC);
+  const q=Q[rC.qi], ans=rC.pick!==null, ok=rC.pick===q.a;
+  const blank=ans?`<span class="blank ${ok?'ok':'ng'}">${rnR(q.o[q.a])}</span>`:'<span class="blank">　</span>';
+  $('#rnBody').innerHTML=`
+    <div class="bar"><div class="lead">${rC.qi+1} / ${Q.length}もん</div>${rnDots(Q.length,rC.res.length,rC.qi,k=>rC.res[k])}</div>
+    <div class="qcard rntsu">
+      <div class="qtag rnw">だん落${q.p}　（　）に入るつなぎ言葉はどれかな</div>
+      <div class="rnpre"><b>前の文</b>${rnR(q.pre)}</div>
+      <div class="rnsen">${rnR(q.s).replace('（　）',blank)}</div>
+    </div>
+    <div class="opts rntopts" style="--on:4">${rC.order[rC.qi].map(k=>{
+      const cls=ans?(k===q.a?' right':(k===rC.pick?' wrong':' dim')):'';
+      return `<button class="opt${cls}" data-k="${k}" ${ans?'disabled':''}>${rnR(q.o[k])}</button>`;}).join('')}</div>
+    <div class="fb" id="rnFb">${ans?`<div class="mark ${ok?'ok':'ng'}">${ok?'◯':'✕'}</div><div class="ex">${ok?'':`正しくは「${rnR(q.o[q.a])}」。`}${rnR(q.e)}</div>`:''}</div>
+    <div class="nextrow"><button class="btn main" id="rnNext" ${ans?'':'hidden'}>${rC.qi===Q.length-1?'けっかを見る':'つぎへ ›'}</button></div>`;
+  if(ans) requestAnimationFrame(()=>{ const f=$('#rnFb'); if(f) f.classList.add('show'); });
+  $('#rnBody').querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+    if(rC.pick!==null) return;
+    rC.pick=+b.dataset.k; const r=rC.pick===q.a; rC.res.push(r); r?pinpon():bubu(); rnDrawC();
+  });
+  $('#rnNext').onclick=()=>{
+    rC.qi++; rC.pick=null;
+    if(rC.qi>=Q.length&&rC.res.every(Boolean)){ pinpon(); setTimeout(party,150); }
+    rnDrawC();
   };
 }
 
